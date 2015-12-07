@@ -1,0 +1,41 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+%
+\title{LaTex Thesis Template}	%% title
+\author{ONG, Hong Xuan}			%% author's name
+
+%
+\newcommand{\argmax}{\arg\!\max}
+
+\begin{document}
+%
+\maketitle
+\tableofcontents
+
+%
+\chapter*{Acknowledgements}
+At first, I would like to give thanks to my advisor ...
+
+%
+\listoffigures
+\listoftables
+
+%
+\input{chapters/introduction}\newpage\cleardoublepage
+\input{chapters/background}\newpage\cleardoublepage
+\input{chapters/method}\newpage\cleardoublepage
+\input{chapters/evaluation}\newpage\cleardoublepage
+\input{chapters/conclusion}\newpage\cleardoublepage
+
+\nocite{*}
+\bibliography{references}\newpage\cleardoublepage
+\bibliographystyle{plain}
+\end{document}
