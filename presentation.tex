@@ -1,0 +1,108 @@
+\documentclass[11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+
+%
+\author{ONG, Hong Xuan}
+\title{LaTex Thesis Template}
+\institute{Japan Advanced Institute of Science And Technology} 
+
+%
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{footline}[frame number]
+
+%
+\newcommand{\argmax}{\arg\!\max}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Contents}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{Introduction}
+	\begin{itemize}
+		\item Introduction 1
+		\item Introduction 2
+		\item Introduction 3
+	\end{itemize}
+\end{frame}
+
+\subsection{Related works}
+\begin{frame}{Related works}
+	\begin{figure}[h!]
+	  \includegraphics[width=0.9\linewidth]{charts/writing-thesis.png}
+	  \caption{Caption of this graph.}
+	  \label{fig:writing-thesis}
+	\end{figure}
+\end{frame}
+
+\section{Background}
+\begin{frame}{Background}
+\begin{center}
+
+  \begin{tabular} {l l l l l}
+  \toprule
+  \it Column 1 & \it Column 2 & \it Column 3 & \it Column 4 \\
+  \midrule
+
+  Row 1.1 & Row 1.2 & Row 1.3 & Row 1.4 \\
+  Row 2.1 & Row 2.2 & Row 2.3 & Row 2.4 \\  
+          
+  \bottomrule
+  \end{tabular}
+
+\captionof{table}{Caption of this table.\label{table:table-template}}
+\end{center}
+\end{frame}
+
+\section{Proposed method}
+\begin{frame}{Proposed method}
+	Some mathematics formula $$F(x) = \argmax_{y \in GEN(x)} w \cdot f(x, y)$$
+\end{frame}
+
+
+\section{Evaluation}
+\begin{frame}{Evaluation}
+	\begin{itemize}
+		\item Evaluation 1
+		\item Evaluation 2
+		\item Evaluation 3
+	\end{itemize}
+\end{frame}
+
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+	\begin{itemize}
+		\item Conclusion 1
+		\item Conclusion 2
+		\item Conclusion 3
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Q\&A}
+	\begin{center}
+		\Huge Thank You
+	\end{center}
+\end{frame}
+
+\begin{frame}{References}
+	\begin{itemize}
+		\item Mario Baroni, Simon Maguire, and William Drabkin. The concept of musical grammar.\textit{Music Analysis}, 1983.
+		\item References 2
+		\item References 3
+	\end{itemize}
+\end{frame}
+\end{document}
