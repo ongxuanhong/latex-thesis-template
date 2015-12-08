@@ -24,3 +24,4 @@ ux
 *.synctex.gz
 *.nav
 *.snm
+*.DS_Store
